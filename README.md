@@ -7,7 +7,7 @@ Reads an PNG file, finds pixels that aren’t white, based on selected ones inte
 
 # Interpolation
 
-Interpolating polynomial is expressed by the formula:  
+K-th interpolating polynomial is expressed by the formula:  
 
 S<sub><sub>k</sub></sub>(x) = h<sub><sub>k</sub></sub><sup>-1</sup>  \[   <sup>1</sup>/<sub>6</sub> M<sub><sub>k-1</sub></sub> \(x<sub><sub>k</sub></sub> - x)<sup>3</sup>  +  <sup>1</sup>/<sub>6</sub> M<sub><sub>k</sub></sub> \(x - x<sub><sub>k-1</sub></sub>)<sup>3</sup>  + \(y<sub><sub>k-1</sub></sub> - <sup>1</sup>/<sub>6</sub> M<sub><sub>k-1</sub></sub> h<sub><sub>k</sub></sub><sup>2</sup>)\(x<sub><sub>k</sub></sub> - x) + \(y<sub><sub>k</sub></sub> - <sup>1</sup>/<sub>6</sub> M<sub><sub>k</sub></sub> h<sub><sub>k</sub></sub><sup>2</sup>)\(x - x<sub><sub>k-1</sub></sub>) ]
  
