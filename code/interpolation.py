@@ -57,7 +57,10 @@ class Interpolation:
 
     @staticmethod
     def table_of_moments(x,y):
-        """ Moments of the interpolating polynomial : Mi == s''(Xi) """
+        """ 
+        Moments of the interpolating polynomial Mi == s''(Xi) 
+        where s(Xi) is the interpolate polynomial
+        """
         n = len(x)
         Momoents = list(range(0,n))
         Momoents[n-1] = 0

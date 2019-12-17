@@ -1,17 +1,17 @@
 import matplotlib.image as plt_img
 import matplotlib.pyplot as plt
+import re
 
 class Img_reader:
+    objects = []
+    img = []
 
     def __init__(self, src):
-        self.objects = []
-        self.img = plt_img.imread(src)
-        self._read_objects()
-        self._merge_objects()
-        self._merge_objects()
-        self._merge_objects()
-        self._merge_objects()
-
+        prog = re.compile(".+\.py")
+        if prog.match(src) : 
+            self.img = plt_img.imread(src)
+            self._read_objects()
+            self._merge_objects()
 
     def _merge_objects(self):
         for i in range(len(self.objects)):
@@ -37,8 +37,7 @@ class Img_reader:
 
     def _are_connected(self, obj1, obj2):
         # if one of them are empty there aren't connected 
-        if len(obj1) == 0 or len(obj2) == 0: 
-            return -1
+        if len(obj1) == 0 or len(obj2) == 0: return -1
 
         # predicates
         start1_start2 = self._is_neighbor( obj1[0], obj2[0] )
