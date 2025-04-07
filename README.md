@@ -11,3 +11,10 @@ K-th part of the interpolating polynomial is expressed by the formula:
 
 S<sub><sub>k</sub></sub>(x) = h<sub><sub>k</sub></sub><sup>-1</sup>  \[   <sup>1</sup>/<sub>6</sub> M<sub><sub>k-1</sub></sub> \(x<sub><sub>k</sub></sub> - x)<sup>3</sup>  +  <sup>1</sup>/<sub>6</sub> M<sub><sub>k</sub></sub> \(x - x<sub><sub>k-1</sub></sub>)<sup>3</sup>  + \(y<sub><sub>k-1</sub></sub> - <sup>1</sup>/<sub>6</sub> M<sub><sub>k-1</sub></sub> h<sub><sub>k</sub></sub><sup>2</sup>)\(x<sub><sub>k</sub></sub> - x) + \(y<sub><sub>k</sub></sub> - <sup>1</sup>/<sub>6</sub> M<sub><sub>k</sub></sub> h<sub><sub>k</sub></sub><sup>2</sup>)\(x - x<sub><sub>k-1</sub></sub>) ]
  
+# Examples
+
+![](https://github.com/bsobocki/interpolation/blob/master/plots/mush_to_plot_recursive_reading.png)
+
+![](https://github.com/bsobocki/interpolation/blob/master/plots/heart%20to%20plot_recursive_reading.png)
+
+![](https://github.com/bsobocki/interpolation/blob/master/plots/woj%20to%20plot_recursive_reading.png)
